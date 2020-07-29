@@ -1,0 +1,40 @@
+/* Блок поиска */
+.fa.fa-search {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.btn-black {
+  background: #000;
+}
+
+.marc-title {
+  padding: 10px 0;
+}
+
+.input-s {
+  padding-left: 15px !important;
+}
+.shull{
+  padding: 40px 0;
+}
+
+.select-s {
+  padding-left: 30px !important;
+  background-image: url(/assets/img/map-loc.png);
+  background-position: calc(100% - 97%) center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.presentation {
+  padding-left: 16px;
+  float: left;  /* Выравнивание по левому краю */
+  margin: 7px 7px 7px 0;  /* Отступы вокруг картинки */
+}
+
+.presentation-text {
+  position: relative;
+  bottom: 0px;
+  left: 6em;
+}
