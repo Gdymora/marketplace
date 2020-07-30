@@ -1,45 +1,52 @@
-.presentation {
-    /* padding-left: 16px; */
-    float: left;  /* Выравнивание по левому краю */
-    margin: 7px 7px 7px 0;  /* Отступы вокруг картинки */
-  }
-  
-  .presentation-text {
-    position: relative;
-    bottom: 0px;
-   
-  }
-  
-/* Блок списка курсов */
-.city-curs-color{
-    background-color: #f4f9ff;
-  
-  }
-  .city-curs{
-    padding:0 111px;
-    margin:0;
-  }
-
-  .city-curs a:link {
-    color:var(--a-blue-color, #404e62);  /* Цвет ссылок */
-  }
-  .city-curs a:visited {
-    color: #404e62;   /* Цвет посещенных ссылок */
-  }
-  
-  .city-curs a:hover{
-    text-decoration: none;
-    color: #404e62;
-  }
-  
-  li { 
-      list-style-type: none; /* Убираем маркеры */ 
-      padding-left: 39px;
-      
-} 
-.title-category{    
-    padding: 10px 0px 20px 80px;
-} 
-
-
-  
+    .presentation {
+        /* padding-left: 16px; */
+        float: left;
+        /* Выравнивание по левому краю */
+        margin: 7px 7px 7px 0;
+        /* Отступы вокруг картинки */
+    }
+    
+    .presentation-text {
+        position: relative;
+        bottom: 0px;
+    }
+    /* Блок списка курсов */
+    
+    .city-curs-color {
+        background-color: #f4f9ff;
+    }
+    
+    .city-curs {
+        padding: 0 111px;
+        margin: 0;
+    }
+    
+    .city-curs a:link {
+        color: var(--a-blue-color, #404e62);
+        /* Цвет ссылок */
+    }
+    
+    .city-curs a:visited {
+        color: #404e62;
+        /* Цвет посещенных ссылок */
+    }
+    
+    .city-curs a:hover {
+        text-decoration: none;
+        color: #1a22c7;
+    }
+    
+    li {
+        list-style-type: none;
+        /* Убираем маркеры */
+        padding-left: 39px;
+    }
+    
+    .title-category {
+        padding: 10px 0px 20px 80px;
+    }
+    
+    .button-end {
+        position: absolute;
+        bottom: 0px;
+    }
