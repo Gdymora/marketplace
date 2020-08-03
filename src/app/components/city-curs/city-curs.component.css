@@ -17,9 +17,16 @@
     }
     
     .city-curs {
-        padding: 0 111px;
+        padding: 0 111px  80px 111px;
         margin: 0;
     }
+    
+    .read-curs a {
+        font-size: 36px;
+        color: var(--a-blue-color, #1a22c7) !important;
+        /* Цвет ссылок */
+    }
+
     
     .city-curs a:link {
         color: var(--a-blue-color, #404e62);
