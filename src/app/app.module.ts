@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
 import { CityCursComponent } from './components/city-curs/city-curs.component';
+import { FormAddCursComponent } from './components/form-add-curs/form-add-curs.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CityCursComponent } from './components/city-curs/city-curs.component';
     FooterComponent,
     NavbarComponent,
     SearchComponent,
-    CityCursComponent
+    CityCursComponent,
+    FormAddCursComponent
   ],
   imports: [
     BrowserModule,

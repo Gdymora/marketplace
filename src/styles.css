@@ -4,3 +4,19 @@ https://fontawesome.com/v4.7.0/icons/
 https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
 https://getbootstrap.com/docs/4.5/components/buttons/
 */
+
+body{
+    font-family: "Roboto-Regular", Roboto; 
+}
+.title_home{
+    font-size: 34px;
+}
+
+.title-h1{  
+    font-size: 24px;
+    color: #1a22c7;
+}
+.title-h2{  
+    font-size: 18px;
+    color: #1a22c7;
+}
