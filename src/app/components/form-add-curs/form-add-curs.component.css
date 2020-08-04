@@ -1,12 +1,16 @@
-.add_curs-nav{
+.add_curs-nav {
     padding: 37px 111px;
 }
 
-.add_curs-bloc{
-    padding: 38px 111px;   
+.add_curs-bloc {
+    padding: 38px 111px;
 }
 
-.bloc-color{  
+.add_curs-bloc .col-sm {
+    padding: 0;
+}
+
+.bloc-color {
     background-color: #f4f9ff;
 }
 
@@ -14,7 +18,7 @@
 /* Шкала шагов */
 
 ol.progtrckr {
-    width:100%;
+    width: 100%;
     margin: 0;
     padding: 3px;
     list-style-type: none;
@@ -50,14 +54,17 @@ ol.progtrckr[data-progtrckr-steps="9"] li {
     width: 11%;
 }
 
-ol.progtrckr li.progtrckr-done, li.progtrckr-step {
-    color: black;
+ol.progtrckr li.progtrckr-done {
     border-bottom: 2px solid #428cf2;
 }
 
 ol.progtrckr li.progtrckr-step {
-    color: black;
-    border-bottom: 2px solid #428cf2;
+    /*  border-bottom: 2px solid #428cf2; */
+    border-bottom: 2px solid transparent;
+    /* -moz-border-image: -moz-linear-gradient(#0E9ADF 0%, #0625F9 100%);
+    -webkit-border-image: -webkit-linear-gradient(#0E9ADF 0%, #0625F9 100%); */
+    border-image: linear-gradient(to right, #428cf2 0%, #d2d6e4 80%);
+    border-image-slice: 1;
 }
 
 ol.progtrckr li.progtrckr-todo {
@@ -74,8 +81,8 @@ ol.progtrckr li:before {
 }
 
 ol.progtrckr li.progtrckr-done:before {
-     content: url(/assets/img/circle/circle_done.png); 
-  /*   background-image: radial-gradient(circle, #3488ee 3px, #f4f9ff, #3488ee 50px); */
+    content: url(/assets/img/circle/circle_done.png);
+    /*   background-image: radial-gradient(circle, #3488ee 3px, #f4f9ff, #3488ee 50px); */
     height: 2.1em;
     width: 2.1em;
     line-height: 2.1em;
@@ -84,17 +91,57 @@ ol.progtrckr li.progtrckr-done:before {
 }
 
 ol.progtrckr li.progtrckr-step:before {
-    content: url(/assets/img/circle/circle_step.png);    
+    content: url(/assets/img/circle/circle_step.png);
     height: 2.1em;
     width: 2.1em;
     line-height: 2.1em;
     border-color: 4px solid black;
     border-radius: 2.1em;
-
 }
 
 ol.progtrckr li.progtrckr-todo:before {
-    content: url(/assets/img/circle/circle_not.png);    
+    content: url(/assets/img/circle/circle_not.png);
     bottom: -2.1em;
+}
 
+
+/* RADIO  */
+
+.form-check {
+    padding: 0;
+}
+
+.form-check .title {
+    padding-left: 20px;
+    padding-right: 36px;
+}
+
+.form-check .custom-control-label {
+    color: #2c2b2c;
+    font-size: 16px;
+    line-height: 2.1;
+    /*  text-transform: uppercase; */
+}
+
+.form-check .custom-control-label::after,
+.form-check .custom-control-label::before {
+    height: 21px;
+    width: 21px;
+}
+
+.form-check .custom-control-label::before {
+    background-color: #fff;
+    border: 1px solid #2c2b2c;
+    border-radius: 50%;
+}
+
+
+/* When I remove background the icon goes back to that default size */
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: white;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: url(/assets/img/form/radio.png);
 }

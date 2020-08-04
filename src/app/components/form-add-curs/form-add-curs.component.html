@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light add_curs-nav">
 
-    <a class="navbar-brand" [routerLink]="['/']"><img class="presentation" src="assets/img/logo/logo_home.svg"
-            onerror="this.onerror=null; this.src='assets/img/logo/logo_home.png'" alt=""></a>
+    <a class="navbar-brand" [routerLink]="['/']"><img class="presentation" src="assets/img/logo/logo_home.svg" onerror="this.onerror=null; this.src='assets/img/logo/logo_home.png'" alt=""></a>
 </nav>
 
 
@@ -10,13 +9,55 @@
 </div>
 
 <div class="row add_curs-bloc">
-<ol class="progtrckr" data-progtrckr-steps="7">
-    <li class="progtrckr-done">1</li>
-    <li class="progtrckr-done">2</li>
-    <li class="progtrckr-done">3</li>
-    <li class="progtrckr-step">4</li>
-    <li class="progtrckr-todo">5</li>
-    <li class="progtrckr-todo">6</li>  
-    <li class="progtrckr-todo">7</li>     
-</ol>
+    <ol class="progtrckr" data-progtrckr-steps="7">
+        <li class="progtrckr-done">1</li>
+        <li class="progtrckr-done">2</li>
+        <li class="progtrckr-done">3</li>
+        <li class="progtrckr-step">4</li>
+        <li class="progtrckr-todo">5</li>
+        <li class="progtrckr-todo">6</li>
+        <li class="progtrckr-todo">7</li>
+    </ol>
+</div>
+
+<div class="row add_curs-bloc">
+
+    <div class="col-sm">
+        <p class="title-h2">Форма обучения:
+            <span style="color:red;"> *</span>
+        </p>
+        <div class="form-check">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1"><span class="title">Online</span></label>
+            </div>
+
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2"><span class="title">Offline</span></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm ">
+
+        <p class="title-h2">Язык описания курса:
+            <span style="color:red;"> *</span>
+        </p>
+        <div class="form-check">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline3" name="customRadioInline2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline3"><span class="title">Русский</span></label>
+            </div>
+
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline4"><span class="title">Українська</span></label>
+            </div>
+        </div>
+
+
+    </div>
+
+
 </div>
