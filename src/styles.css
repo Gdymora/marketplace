@@ -1,11 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 /*
 https://fontawesome.com/v4.7.0/icons/
 https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
 https://getbootstrap.com/docs/4.5/components/buttons/
 */
+
+:root {
+    --red-color: #ed1e24;
+    --blue-color: #29B0D9;
+    --green-color: #8BBF50;
+    --yellow-color: yellow;
+    --black-color: black;
+}
 
 body {
     font-family: "Roboto-Regular", Roboto;
@@ -29,3 +36,265 @@ body {
     font-size: 16px;
     color: #1a22c7;
 }
+
+.input {
+    border: 1px solid var(--blue-color, #29B0D9);
+    /* Параметры рамки */
+    padding: 0 15px;
+    border-radius: 5% / 70%;
+}
+
+.input:focus {
+    border: 1px solid var(--blue-color, #29B0D9);
+    box-shadow: 0px 0px 3px var( --blue-color, #29B0D9);
+    /* Параметры рамки */   
+    padding: 0 15px;
+    /* border-radius: 20% / 50%; */
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*                css-tooltip  */
+
+.css-tooltip-top,
+.css-tooltip-bottom,
+.css-tooltip-right,
+.css-tooltip-left {
+    position: relative !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+.css-tooltip-top span,
+.css-tooltip-bottom span,
+.css-tooltip-right span,
+.css-tooltip-left span,
+.css-tooltip-diagonal-right span,
+.css-tooltip-diagonal-left span {
+    min-width: 228px;
+    font-family: arial, sans-serif !important;
+    font-size: 13px !important;
+    line-height: normal !important;
+    text-align: left !important;
+    padding: 10px 10px 12px 10px !important;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 9999999 !important;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    -ms-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-timing-function: cubic-bezier(0.35,0,0.35,1);
+    -moz-transition-timing-function: cubic-bezier(0.35,0,0.35,1);
+    -o-transition-timing-function: cubic-bezier(0.35,0,0.35,1);
+    -ms-transition-timing-function: cubic-bezier(0.35,0,0.35,1);
+    transition-timing-function: cubic-bezier(0.35,0,0.35,1);
+}
+
+.css-tooltip-top span:before,
+.css-tooltip-bottom span:before,
+.css-tooltip-right span:before,
+.css-tooltip-left span:before,
+.css-tooltip-diagonal-right span:before,
+.css-tooltip-diagonal-left span:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+
+/* Tool tip Top */
+.css-tooltip-top span {
+    left: -10px;
+    bottom: 100%;
+    margin-bottom: 30px;
+    -webkit-transition-property: opacity, margin-bottom, visibility;
+    -moz-transition-property: opacity, margin-bottom, visibility;
+    -o-transition-property: opacity, margin-bottom, visibility;
+    -ms-transition-property: opacity, margin-bottom, visibility;
+    transition-property: opacity, margin-bottom, visibility;
+}
+
+.css-tooltip-top span:before {
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 8px solid #000;
+    border-bottom: 0 !important;
+    bottom: -8px;
+    left: 15px;
+}
+.css-tooltip-top span:after {
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 8px solid #000;
+    border-bottom: 0 !important;
+    bottom: -7px;
+    left: 15px;
+}
+
+.css-tooltip-top:hover span {
+    margin-bottom: 10px;
+ /* End Position */
+    visibility: visible;
+    opacity: 1;
+}
+
+/* tooltip left
+-------------------------------------------------------------- */
+
+.css-tooltip-left span {
+    right: 100%;
+    top: -7px;
+    margin-right: 35px;
+    -webkit-transition-property: opacity, margin-right, visibility;
+    -moz-transition-property: opacity, margin-right, visibility;
+    -o-transition-property: opacity, margin-right, visibility;
+    -ms-transition-property: opacity, margin-right, visibility;
+    transition-property: opacity, margin-right, visibility;
+}
+
+.css-tooltip-left span:before {
+    border-left: 8px solid #000;
+    border-right: 0 !important;
+    border-top: 8px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+    top: 11px;
+    right: -8px;
+}
+
+.css-tooltip-left span:after { 
+    top: 11px;
+    right: -225px;
+    width: 100%;
+    height: 10px;
+    border-left: 8px solid #000;
+    border-right: 0 !important;
+    border-top: 8px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+}
+
+
+
+.css-tooltip-left:hover span {
+    margin-right: 15px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* tooltip right
+-------------------------------------------------------------- */
+
+.css-tooltip-right span {
+    left: 100%;
+    top: -7px;
+    margin-left: 35px;
+    -webkit-transition-property: opacity, margin-left, visibility;
+    -moz-transition-property: opacity, margin-left, visibility;
+    -o-transition-property: opacity, margin-left, visibility;
+    -ms-transition-property: opacity, margin-left, visibility;
+    transition-property: opacity, margin-left, visibility;
+}
+
+.css-tooltip-right span:before {
+    border-left: 0 !important;
+    border-right: 8px solid #000;
+    border-top: 8px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+    top: 11px;
+    left: -8px;
+}
+
+.css-tooltip-right span:after { 
+    left: -225px;
+    top: 11px;
+    width: 100%;
+    height: 10px;
+
+    border-right: 8px solid #ffffff;
+    border-top: 8px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+}
+
+.css-tooltip-right:hover span {
+    margin-left: 15px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* --------------------------tooltip bottom /////////////////////////////------------------------- */
+/*                                  TOOLTIP                                                        */
+/* --------------------------tooltip bottom /////////////////////////////------------------------- */
+
+.css-tooltip-bottom span {
+    left: -10px;
+    top: 100%;
+    margin-top: 30px;
+    -webkit-transition-property: opacity, margin-top, visibility;
+    -moz-transition-property: opacity, margin-top, visibility;
+    -o-transition-property: opacity, margin-top, visibility;
+    -ms-transition-property: opacity, margin-top, visibility;
+    transition-property: opacity, margin-top, visibility;
+}
+
+.css-tooltip-bottom span:before {
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 0 !important;
+    border-bottom: 8px solid #000;
+    top: -8px;
+    left: 15px;
+}
+
+.css-tooltip-bottom span:after {
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 0 !important;
+    border-bottom: 8px solid;
+    top: -7px;
+    left: 15px;
+}
+
+.css-tooltip-bottom:hover span {
+    margin-top: 10px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip Color */
+
+
+.color-white span {
+    color: #353434 !important;
+    background: #ffff;    
+    border: 1px solid #1b1818;
+    border-radius: 4px;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.color-white span:before {
+    border-color: #1b1818;
+}
+
+.color-white span:after {
+    content: "";
+    display: block;
+    border-color: #ffffff;  
+    position: absolute;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* --------------------------tooltip bottom /////////////////////////////------------------------- */
+/*                                  TOOLTIP                                                        */
+/* --------------------------tooltip bottom /////////////////////////////------------------------- */
