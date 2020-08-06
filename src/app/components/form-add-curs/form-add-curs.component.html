@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light add_curs-nav">
 
-    <a class="navbar-brand" [routerLink]="['/']"><img class="presentation" src="assets/img/logo/logo_home.svg"
-            onerror="this.onerror=null; this.src='assets/img/logo/logo_home.png'" alt=""></a>
+    <a class="navbar-brand" [routerLink]="['/']"><img class="presentation" src="assets/img/logo/logo_home.svg" onerror="this.onerror=null; this.src='assets/img/logo/logo_home.png'" alt=""></a>
 </nav>
 
 
@@ -80,42 +79,83 @@
             <a class="css-tooltip-right color-white" href="#">
                 <span>
                     Подзаголовок не может быть длиннее 150 символов. 
-            </span> 
-            <img
-                    src="assets/img/icon/question.svg" onerror="this.onerror=null; this.src='question.png'" alt=""></a>
+            </span>
+                <img src="assets/img/icon/question.svg" onerror="this.onerror=null; this.src='question.png'" alt=""></a>
         </p>
 
-        <div class="form-inline col-12 pl-0">
+        <div class="col-12 p-0">
 
-            <input class="form-control col-md-11 col-sm-12 aray" type="text"
-                placeholder='Например: "Освойте все тонкости маникюра и станьте настоящим профессионалом"'>
 
+            <div class="col-12 p-0">
+                <textarea rows="3" name="text" class="form-control col-md-11 col-sm-12 aray" placeholder="Например, курсы маникюра"></textarea>
+            </div>
         </div>
     </div>
 
 </div>
+<!-- ////////////////////// -->
+<div class="row add_curs-bloc">
 
 
+    <div class="col-sm">
+
+        <p class="title-h2">Описание курса:
+            <a class="css-tooltip-right tooltip-lg color-white" href="#">
+                <span>
+                    Добавьте всю необходимую информацию о курсе - опишите суть курса,
+                     преимущества, для кого подходит, чему научатся студенты, какими будут занятия 
+                     (групповые, индивидуальные, в классе или online), что студенты получат в итоге 
+                    (работу, готовый проект для портфолио, новое хобби).
+                </span>
+                <img src="assets/img/icon/question.svg" onerror="this.onerror=null; this.src='question.png'" alt=""></a>
+        </p>
+
+
+        <div class="col-12 p-0">
+            <textarea rows="10" name="text" class="form-control col-md-11 col-sm-12 aray-lg" placeholder="Например, курсы маникюра"></textarea>
+        </div>
+
+    </div>
+
+</div>
 
 
 <!-- ////////////////////// -->
 
 <div class="row add_curs-bloc">
 
+    <div class="col-sm ">
+        <p class="title-h2">Подзаголовок курса:
+            <a class="css-tooltip-right color-white" href="#">
+                <span>
+                    Подзаголовок не может быть длиннее 150 символов. 
+            </span>
+                <img src="assets/img/icon/question.svg" onerror="this.onerror=null; this.src='question.png'" alt=""></a>
+        </p>
+
+        <div class="col-12 p-0">
+
+
+            <div class="col-12 p-0">
+                <textarea rows="3" name="text" class="form-control col-md-11 col-sm-12 aray" placeholder="Например, курсы маникюра"></textarea>
+            </div>
+        </div>
+    </div>
+
 
     <div class="col-sm">
         <p class="title-h2">Название курса:
             <span style="color:red;"> *</span>
         </p>
+
+        <div class="form-inline col-12 pl-0">
+            <input class="form-control col-md-11 col-sm-12 input" type="text" placeholder="Например, курсы маникюра">
+        </div>
     </div>
-</div>
 
 
-<div class="row add_curs-bloc">
-    <div class="form-inline col-12 p-0 m-0">
-        <input class="form-control col-md-11 col-sm-12 input p-0" type="text" placeholder="Например, курсы маникюра">
-    </div>
 </div>
+<!-- ////////////////////// -->
 
 
 <div class="row">

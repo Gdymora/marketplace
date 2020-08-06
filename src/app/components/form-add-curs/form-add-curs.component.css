@@ -14,6 +14,7 @@
     background-color: #f4f9ff;
 }
 
+
 /* Шкала шагов */
 
 ol.progtrckr {
@@ -103,6 +104,7 @@ ol.progtrckr li.progtrckr-todo:before {
     bottom: -2.1em;
 }
 
+
 /* RADIO  */
 
 .form-check {
@@ -121,7 +123,8 @@ ol.progtrckr li.progtrckr-todo:before {
     /*  text-transform: uppercase; */
 }
 
-.form-check .custom-control-label::after, .form-check .custom-control-label::before {
+.form-check .custom-control-label::after,
+.form-check .custom-control-label::before {
     height: 21px;
     width: 21px;
 }
@@ -131,6 +134,7 @@ ol.progtrckr li.progtrckr-todo:before {
     border: 1px solid #2c2b2c;
     border-radius: 50%;
 }
+
 
 /* When I remove background the icon goes back to that default size */
 
@@ -145,60 +149,85 @@ ol.progtrckr li.progtrckr-todo:before {
 }
 
 .aray {
-    height: 88px;  
     border: 1px solid var(--blue-color, #29B0D9);
     /* Параметры рамки */
-    padding: 0 15px;
+    padding-right: 83px;
+    padding-top: 35px;
     border-radius: 5% / 70%;
 }
+
 .aray:focus {
     border: 1px solid var(--blue-color, #29B0D9);
     box-shadow: 0px 0px 3px var( --blue-color, #29B0D9);
-    /* Параметры рамки */   
+    /* Параметры рамки */
     padding: 0 15px;
     /* border-radius: 20% / 50%; */
 }
 
 .aray::placeholder {
-    line-height: 1.em;
+    line-height: 1.2em;
     color: #797570;
-    padding-right: 83px;
+    padding-top: 0px;
     white-space: normal;
 }
 
+.aray-lg {
+    border: 1px solid var(--blue-color, #29B0D9);
+    /* Параметры рамки */
+    padding-left: 4%;
+    /* Поле слева */
+    border-radius: 3% / 50%;
+}
+
+.aray-lg::placeholder {
+    background-image: url(/assets/img/icon/rectangle.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    line-height: 1.2em;
+    color: #797570;
+    padding-top: 37px;
+    white-space: normal;
+}
+
+
 /* сдвиг placeholder-а вправо при фокусе*/
 
-.input:-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
-.input:-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
-.input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
-.inputy:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
-.input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
-.input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
-.input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
-.input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+.input:-webkit-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+}
 
+.input:-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+}
 
- /* Tooltip */
- .test + .tooltip > .tooltip-inner {
-    background-color: #73AD21; 
-    color: #FFFFFF; 
-    border: 1px solid green; 
-    padding: 15px;
-    font-size: 20px;
+.input:-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
 }
-/* Tooltip on top */
-.test + .tooltip.top > .tooltip-arrow {
-    border-top: 5px solid green;
+
+.inputy:-ms-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
 }
-/* Tooltip on bottom */
-.test + .tooltip.bottom > .tooltip-arrow {
-    border-bottom: 5px solid blue;
+
+.input:focus::-webkit-input-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.3s ease;
 }
-/* Tooltip on left */
-.test + .tooltip.left > .tooltip-arrow {
-    border-left: 5px solid red;
+
+.input:focus::-moz-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.3s ease;
 }
-/* Tooltip on right */
-.test + .tooltip.right > .tooltip-arrow {
-    border-right: 5px solid black;
+
+.input:focus:-moz-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.3s ease;
+}
+
+.input:focus:-ms-input-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.3s ease;
 }
