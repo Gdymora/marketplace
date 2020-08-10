@@ -148,20 +148,17 @@ ol.progtrckr li.progtrckr-todo:before {
     background-image: url(/assets/img/form/radio.png);
 }
 
-.aray {
+.aray, .aray:focus {
     border: 1px solid var(--blue-color, #29B0D9);
     /* Параметры рамки */
     padding-right: 83px;
-    padding-top: 35px;
+    padding-top: 15px;
     border-radius: 5% / 70%;
 }
 
 .aray:focus {
-    border: 1px solid var(--blue-color, #29B0D9);
     box-shadow: 0px 0px 3px var( --blue-color, #29B0D9);
-    /* Параметры рамки */
-    padding: 0 15px;
-    /* border-radius: 20% / 50%; */
+  
 }
 
 .aray::placeholder {
